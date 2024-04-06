@@ -20,7 +20,7 @@ describe('Duck Duck Go search using basic Puppeteer', function () {
     });
 
     it('should be the correct url', async () => {
-        expect(await page.url()).to.eql('https://google.com/');
+        expect(await page.url()).to.eql('https://duckduckgo.com/');
     });
 
     it('should have the correct page title', async () => {
@@ -28,6 +28,6 @@ describe('Duck Duck Go search using basic Puppeteer', function () {
     });
 
     it('should have the page open', async () => {
-        expect(await page.isClosed()).to.eql(true);
+        expect(await page.isClosed()).to.eql(false);
     });
 });
